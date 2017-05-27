@@ -1,0 +1,51 @@
+<templateSet group="springboot">
+  <template name="post" value="/**&#10; * $comment$&#10; * @param request&#10; * @param response&#10; */&#10;@RequestMapping(value = &quot;$url$Post&quot;, method = RequestMethod.POST)&#10;public $T$ post$methodName$(@ModelAttribute(value=&quot;$voName$&quot;) $vo$VO $voName$&#10;        , HttpServletRequest request&#10;        , HttpServletResponse response) {&#10;    // TODO : POST으로 받아서 처리하는 부분 입니다. &#10;    return null;&#10;}" description="requestmapping method post" toReformat="false" toShortenFQNames="true">
+    <variable name="comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="camelCase(String)" defaultValue="url" alwaysStopAt="true" />
+    <variable name="vo" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="voName" expression="camelCase(String)" defaultValue="vo" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="get" value="@RequestMapping(value = &quot;$url$Get&quot;, method = RequestMethod.GET)&#10;public $T$ post$methodName$(@ModelAttribute(value=&quot;$voName$&quot;) $vo$VO $voName$&#10;        , HttpServletRequest request&#10;        , HttpServletResponse response) {&#10;    // TODO : GET으로 받아서 처리하는 부분 입니다. &#10;    return null;&#10;}" description="get method" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="camelCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="T" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="url" alwaysStopAt="true" />
+    <variable name="voName" expression="camelCase(String)" defaultValue="vo" alwaysStopAt="true" />
+    <variable name="vo" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="string" value="@RequestMapping(value = &quot;$url$Get&quot;, method = RequestMethod.GET)&#10;public String $methodName$(@ModelAttribute(value=&quot;$voName$&quot;) $vo$VO $voName$&#10;        , HttpServletRequest request&#10;        , HttpServletResponse response) {&#10;    // TODO : GET으로 받아서 처리하는 부분 입니다. &#10;    $printcodoe$&#10;    return null;&#10;}" description="return to string" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="capitalize(String)" defaultValue="url" alwaysStopAt="true" />
+    <variable name="voName" expression="capitalize(String)" defaultValue="vo" alwaysStopAt="true" />
+    <variable name="vo" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="printcodoe" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+</templateSet>
