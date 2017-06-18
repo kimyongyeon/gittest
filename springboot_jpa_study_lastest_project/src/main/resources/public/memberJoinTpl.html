@@ -5,6 +5,7 @@
     <title>member JOIN</title>
 </head>
 <body>
+<h1>회원 가입 및 수정</h1>
 <form action="/memberJoin" method="post">
     <table>
         <tr>
@@ -30,6 +31,8 @@
     </table>
 </form>
 
+<a href="/memberListTpl.html">목록</a>
+
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script>
     function memberJoin() {
@@ -39,7 +42,7 @@
         $("input").val('').focus();
     }
     $("#btnSave").click(function() {
-       memberJoinTpl();
+        memberJoin();
     });
     $("#btnCancel").click(function() {
        memberClear();

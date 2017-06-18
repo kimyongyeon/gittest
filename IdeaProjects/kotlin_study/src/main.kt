@@ -1,3 +1,8 @@
-/**
- * Created by yongyeonkim on 2016. 4. 20..
- */
+fun main(args: Array<String>) {
+    println("Hello, world!")
+    println(sum(1,2))
+}
+
+fun sum(x:Int, y:Int): Int {
+    return x + y
+}
