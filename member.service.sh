@@ -1,1 +1,0 @@
-member.service.sh add
